@@ -45,7 +45,6 @@ function Home({ recipes }) {
 
 export async function getStaticProps() {
   const res = await axios.get('http://localhost:1337/recipes');
-  console.log('RESPUESTA', res)
   const recipes = res.data
 
   return {
